@@ -50,7 +50,7 @@ function AddUser() {
 
     setErrors({});
     try{
-      const response = await axios.post("http://localhost:5000/api/add-user",formData,{
+      const response = await axios.post("https://mern-b-y2h6.onrender.com/api/add-user",formData,{
         headers:{
           "Content-Type":"Application/JSON",
           "Authorization":"Bearer "+token
